@@ -8,11 +8,11 @@
 
 - 🔭 I’m currently working on **few languages**
 
-- 🌱 I’m currently learning **Java and Web development**
+- 🌱 I’m currently learning **Python Programming**
 
 - 👯 I’m looking to collaborate on **some basic projects**
 
-- 📫 How to reach me **Faizanaziz636@gmail.com**
+- 📫 Reach me via **Faizanaziz636@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
