@@ -1,0 +1,15 @@
+operator = input("Enter any operator from the following: \n (+,-,/,*)")
+
+num1 = int(input("enter first number:"))
+num2 = int(input("enter first number:"))
+
+if operator == "+":
+    result = num1 + num2
+elif operator == "-":
+    result = num1 - num2
+elif operator == "*":
+    result = num1 * num2
+elif operator == "/":
+    result = num1 / num2
+
+print(result)   
