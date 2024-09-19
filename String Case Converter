@@ -1,0 +1,15 @@
+
+x=input("Enter the string:")
+
+while not x.isalpha():
+    print("Not a valid input")
+    x=input("Enter the valid string:")
+    
+print(len(x))
+
+choice = input("Do you want to make your string in upper case or lower case: (U/L)")
+
+if choice == "U":
+    print(x.upper())
+elif choice =="L":
+   print(x.lower())
