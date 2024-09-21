@@ -4,10 +4,10 @@ timestamp=time.strftime("%H:%M:%S")
 
 current_time = int(time.strftime("%H"))
 
-if  12 >= current_time <=10:
+if  12 < current_time <10:
     print("Good Morning")
 
-elif 10<= current_time <4:
+elif 10< current_time <16:
     print("Good Afternoon")
 
 else:
