@@ -1,0 +1,14 @@
+import random
+
+x= random.randint(1,6)
+
+
+num=int(input("Enter the number:"))
+
+if num == x:
+    print("Your guess is right")
+else:
+   print("Your guess is wrong")
+
+print(x)
+
