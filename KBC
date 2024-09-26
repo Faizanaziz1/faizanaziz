@@ -1,0 +1,26 @@
+print("Lets Play KBC")
+questions=("Who is the PM of India?:","What is the name of the game creator:","Who built taj mahal:")
+answers=["Modi", "Faizan", "SJ"]
+
+a=1000
+b=2000
+c=3000
+
+answer1=input(questions[0])
+if answer1==answers[0]:
+    print("correct answer,you have won",a)
+
+    answer2= input(questions[1])
+    if answer2==answers[1]:
+        print("correct answer,you have won",b)
+
+        answer3=input(questions[2])
+        if answer3==answers[2]:
+            print("Correct answer, you have won",c)
+        else:
+            print("Wrong answer")
+    else:
+        print("Wrong asnwer")
+    
+else:
+    print("Wrong answer")
