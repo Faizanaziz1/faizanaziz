@@ -1,0 +1,9 @@
+from datetime import datetime
+
+date_input = input("Enter a date in YYYY-MM-DD format")
+
+date_object=datetime.strptime(date_input, '%Y-%m-%d')
+
+day_of_the_week=date_object.strftime('%A')
+
+print(f"The day on the{date_input} was a {day_of_the_week}")
