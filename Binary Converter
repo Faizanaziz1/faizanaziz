@@ -1,0 +1,14 @@
+def sum_of_binary_digits(n):
+    
+    binary_representation = bin(n)[2:]
+    
+   
+    sum_of_digits = sum(int(digit) for digit in binary_representation)
+    
+    return binary_representation, sum_of_digits
+
+
+number = int(input("Enter the number:"))
+binary_num, sum_of_digits = sum_of_binary_digits(number)
+print(f"Binary representation: {binary_num}")
+print(f"Sum of binary digits: {sum_of_digits}")
