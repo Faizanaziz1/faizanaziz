@@ -1,0 +1,11 @@
+
+ed= int(input("Enter 1 for encoding"))
+if ed==1:
+    message= input("Enter a message for encoding:\n")
+    rc= input("Enter random 6 characters\n")
+    print(message[::-1])
+    encoding= message[1:]
+    print(rc[:3]+encoding+message[:1]+rc[3:])
+        
+
+
