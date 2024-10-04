@@ -1,11 +1,40 @@
+def encode_message():
+    message = input("Enter a message for encoding:\n")
+    rc = input("Enter random 6 characters:\n")
+    
+    # Encoding steps
+    reversed_message = message[::-1]
+    encoding = message[1:] + message[0]  # shift first character to the end
+    encoded_message = rc[:3] + encoding + rc[3:]
+    
+    print(f"Encoded message: {encoded_message}")
+    return encoded_message, rc
 
-ed= int(input("Enter 1 for encoding"))
-if ed==1:
-    message= input("Enter a message for encoding:\n")
-    rc= input("Enter random 6 characters\n")
-    print(message[::-1])
-    encoding= message[1:]
-    print(rc[:3]+encoding+message[:1]+rc[3:])
-        
+def decode_message(encoded_message, rc):
+    # Remove the first 3 and last 3 characters (from rc)
+    trimmed_message = encoded_message[3:-3]
+    
+    # Move the last character of the trimmed message to the front
+    decoded_step = trimmed_message[-1] + trimmed_message[:-1]
+    
+    # Reverse the string to get the original message
+    original_message = decoded_step[::-1]
+    
+    print(f"Decoded message: {original_message}")
+    return original_message
 
+# Main function to choose encoding or decoding
+def main():
+    choice = int(input("Enter 1 for encoding or 2 for decoding:\n"))
+    
+    if choice == 1:
+        encoded_message, rc = encode_message()
+    elif choice == 2:
+        encoded_message = input("Enter the encoded message:\n")
+        rc = input("Enter the same 6 random characters used for encoding:\n")
+        decode_message(encoded_message, rc)
+    else:
+        print("Invalid choice! Please enter 1 for encoding or 2 for decoding.")
 
+# Run the main function
+main()
