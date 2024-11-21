@@ -1,0 +1,20 @@
+import random
+def RPS():
+  print("welcome to the rock paper scissor game")
+
+  user_input=input("Enter your choice: R,P,S:")
+  computer_input=random.choice(["Rock","Paper","Scissor"])
+
+  print(f"you chose {user_input} and computer chose {computer_input}")
+
+  if user_input==computer_input:
+    print("draw")
+  elif user_input=="Rock" and computer_input=="Scissor":
+    print("You won")
+  elif user_input=="Paper" and computer_input=="Rock":
+    print("You won")
+  elif user_input=="Scissor" and computer_input=="Paper":
+    print("You won")
+  else:
+    print("You lost")
+RPS()
